@@ -26,19 +26,17 @@ function NavBar(){
                     {/* <li class="nav-item">
                       <Link className="active me-3" to="/donate">Donate</Link>
                     </li> */}
-                    {/* <li class="nav-item">
+                    { /*<li class="nav-item">
                       <Link className="active me-3" to="/signup">Sign Up</Link>
-                    </li>
-                    <li class="nav-item">
-                      <Link to="/login">Login</Link>
-                    </li> */}
+                    </li>*/}
+                 
                   </ul>
 
               </div>
 
                   <div className="authorization">
                         <button id="Sign-btn" className="btn btn-outline-info ms-2" type="button">
-                        <Link className="active me-3 navbar-brand" to="/signup">Sign Up</Link>
+                        <Link className="active me-3 navbar-brand" to="/Signup">Sign Up</Link>
                         </button>
                         <button id="login-btn" className="btn btn-outline-primary ms-2" type="button">
                         <Link className="active me-3 navbar-brand" to="/login">Login</Link>
