@@ -8,6 +8,7 @@ import Footer from './Footer';
 import Contact from './Contact';
 import Authentication from './Authentication';
 import Signup from './Signup';
+import MemeGen from './MemeGen';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path='/contact' element={<Contact />}></Route>
          <Route path='/Signup' element={<Signup/>}></Route> 
         <Route path='/login' element={<Authentication/>}></Route>
+        <Route path='/memegen' element={<MemeGen/>}></Route>
       </Routes>
       <Footer/>
 </BrowserRouter>

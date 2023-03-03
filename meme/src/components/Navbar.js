@@ -33,6 +33,8 @@ function NavBar(){
                   </ul>
 
               </div>
+            
+                  </div>
 
                   <div className="authorization">
                         <button id="Sign-btn" className="btn btn-outline-info ms-2" type="button">
@@ -43,7 +45,7 @@ function NavBar(){
                         </button>
                 </div>
               
-            </div>
+           
         </nav>   
       </div>
     
