@@ -1,10 +1,30 @@
-.p{
+/* App Container */
+.App {
+    margin: 20px auto;
+    max-width: 800px;
+  }
+  
+  h1 {
     text-align: center;
-    font-weight: 600;
-    font-style: italic;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.btn .btn-outline-info .ms-2{
-    align-items: center;
-}
+    margin-bottom: 20px;
+  }
+  
+  /* Images Container */
+  .images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Image */
+  img {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .selected {
+    border:3px;
+  }  

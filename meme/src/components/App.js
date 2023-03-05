@@ -8,19 +8,20 @@ import Footer from './Footer';
 import Contact from './Contact';
 import Authentication from './Authentication';
 import Signup from './Signup';
-import MemeGen from './MemeGen';
+/*import MemeGenerator from './addmemes';*/
 
 function App() {
   return (
     <BrowserRouter>
     <NavBar/>
+    
       <Routes>
-        <Route path='/' element={<Home />}></Route>
+        <Route path='/' element={<Home/>}></Route>
         <Route path='/about' element={<About />}></Route>
         <Route path='/contact' element={<Contact />}></Route>
          <Route path='/Signup' element={<Signup/>}></Route> 
         <Route path='/login' element={<Authentication/>}></Route>
-        <Route path='/memegen' element={<MemeGen/>}></Route>
+        
       </Routes>
       <Footer/>
 </BrowserRouter>
