@@ -1,0 +1,48 @@
+/* Login and Signup page CSS */
+.signup-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .signup-button {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #0077cc;
+    color: white;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .signup-button:hover {
+    background-color: #005fa3;
+    cursor: pointer;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+  
+  input {
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.05);
+    font-size: 16px;
+    color: #333;
+  }
+  
+  p {
+    color: #ff4444;
+    margin-top: 10px;
+  }
+  

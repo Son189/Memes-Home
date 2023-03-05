@@ -1,19 +1,13 @@
-// Signup.js
 import React, { useState } from 'react';
-import './auth.css'
-function Signup() {
+import "./auth.css"
+function Login() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const [confirmPassword, setConfirmPassword] = useState('');
   const [error, setError] = useState('');
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    if (password !== confirmPassword) {
-      setError('Passwords do not match');
-      return;
-    }
-    fetch('/signup', {
+    fetch('/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -21,18 +15,22 @@ function Signup() {
       body: JSON.stringify({ username, password })
     })
       .then((response) => {
-        console.log(response);
-        window.location.href = '/';
+        if (response.ok) {
+          console.log(response);
+          window.location.href = '/';
+        } else {
+          throw new Error('Invalid username or password');
+        }
       })
       .catch((error) => {
         console.error(error);
-        setError('Username already exists');
+        setError(error.message);
       });
   };
 
   return (
     <div>
-      <h2>Signup</h2>
+      <h2>Login</h2>
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="username">Username</label>
@@ -42,16 +40,11 @@ function Signup() {
           <label htmlFor="password">Password</label>
           <input type="password" id="password" value={password} onChange={(event) => setPassword(event.target.value)} />
         </div>
-        <div>
-          <label htmlFor="confirm-password">Confirm Password</label>
-          <input type="password" id="confirm-password" value={confirmPassword} onChange={(event) => setConfirmPassword(event.target.value)} />
-        </div>
         {error && <p>{error}</p>}
-        <button type="submit">Signup</button>
+        <button type="submit">Login</button>
       </form>
     </div>
   );
 }
 
-export default Signup;
-
+export default Login;
