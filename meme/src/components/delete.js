@@ -19,3 +19,4 @@ function DeleteButton({ memeId }) {
 
   return <button onClick={handleDelete}>Delete</button>;
 }
+export default DeleteButton

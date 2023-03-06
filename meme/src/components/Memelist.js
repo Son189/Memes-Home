@@ -25,3 +25,4 @@ function MemeList() {
     </div>
   );
 }
+export default MemeList
