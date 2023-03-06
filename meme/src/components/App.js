@@ -12,22 +12,22 @@ import DeleteButton from './delete';
 import Signup from './Signup';
 import Login from './Login';
 /*import MemeGenerator from './addmemes';*/
+import Search from './Search';
 
 function App() {
   return (
     <BrowserRouter>
     <NavBar/>
-    <DeleteButton/>
+    <Search/>
     <MemeGenerator/>
+    <DeleteButton/>
     <MemeList/>
       <Routes>
-       
         <Route path='/about' element={<About />}></Route>
         <Route path='/contact' element={<Contact />}></Route>
          <Route path='/Signup' element={<Signup/>}></Route> 
          <Route path='/login' element={<Login/>}></Route> 
       </Routes>
-
       <Footer/>
 </BrowserRouter>
   );
